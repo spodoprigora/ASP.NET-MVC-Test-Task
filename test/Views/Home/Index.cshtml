@@ -1,0 +1,33 @@
+﻿@model test.ViewModel.MessagesViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" id="result">
+    @{ Html.RenderPartial("MessageDetails", @Model); }
+</div>
+
+@section Form{
+    @using (Html.BeginForm("SaveMessage", "Home", FormMethod.Post,
+            new { id = "mesForm", @class = "form", enctype = "multipart/form-data" }))
+        {
+            <div>
+                @Html.Label("Name", "Имя")
+                @Html.TextBox("Name", "", new { placeholder = "Введите имя" })
+            </div>
+            <div>
+                @Html.Label("Message", "Сообщение")
+                @Html.TextArea("Message", new { @style = "width:450px;", @placeholder = "Введите сообщение здесь" })
+            </div>
+            <div class="att">
+                <fieldset>
+                    <span class="cross"></span>
+                    <span class="label">Добавьте вложения</span>
+                    @Html.Label("Link", "Введите ссылку")
+                    @Html.TextBox("Link", "", new { placeholder = "link" })
+                    <input id="uploadFile" type="file" name="files" accept="image/jpeg,image/png,image/gif" multiple="true" />
+                </fieldset>
+            </div>
+            <p><input id="mesFormSubmit" type="button" value="Отправить" class="btn btn-success" /></p>
+        }
+}

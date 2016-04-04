@@ -1,0 +1,172 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea { max-width: 280px; }
+.container {
+    max-width: 960px;
+    width: 90%;
+    text-align: center;
+}
+.message {
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+.like {
+    position: absolute;
+    background-image: url('images/like.png');
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    padding-left: 26px;
+    padding-top: 19px;
+}
+.message div {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+.message p { margin-top: 10px; }
+footer { text-align: center; }
+.form label {
+    float: left;
+    margin: 3px 10px;
+    text-align: left;
+    width: 100px;
+}
+.form input { display: block; }
+.form textarea{ display: block; }
+.form{
+   border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto;
+}
+.form div { margin-bottom: 10px; }
+.fil{
+    position:absolute;
+    z-index: 2;
+    height: 20px;
+    width: 110px;
+    display: block;
+    opacity:0;
+    cursor: pointer;
+}
+.sub {
+    position:absolute;
+    z-index: 1;
+    height: 20px;
+    width: 110px;
+    display: block;
+    opacity:0;
+}
+.sub_sel {
+    position:absolute;
+    width:130px;
+    height:18px;
+    left:5px;
+    top:5px;
+    border:1px solid gray;
+    border-radius:2px;
+    z-index:0;
+    text-align:center;
+    background-color:lavender;
+    color:indigo;
+    font-size:9pt;
+    font-weight:normal;
+    font-family:arial;
+}
+.att{
+    width: 425px;
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+}
+.att label{
+    float: none;
+    width: 138px;
+}
+.att .file{
+    position: relative;
+    width: 110px;
+    height: 20px;
+}
+#attachment { text-align: left; }
+#attachment li { font-style: italic; }
+.att .label {
+     background-color: white;
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    top: -9px;
+}
+ .cross {
+    background-image: url('images/add.png');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    cursor: pointer;
+}
+ fieldset input {
+     float: right;
+     clear: both;
+     margin: 0 40px 10px 0;
+ }
+fieldset input[type="file"] { float: left; }
+a.dell{
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+a.dell:hover { color: lavender; }
+.pages ul li{
+    display: inline-block;
+    margin: 10px;
+    background-color: lavender;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: bottom;
+}
+.pages ul li a{
+    font-size: 16px;
+    color: black;
+}
+.pages ul li.curent{ background-color:#94DE52; }
+.pages ul li.point{
+  width: 40px;
+  color: black;
+  height: 20px;
+  font-weight: bold;
+  margin-top: -23px;
+  padding: 5px 0;
+  line-height:3px;
+  position:relative;
+  top: -6px;
+}
